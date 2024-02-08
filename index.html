@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		 <meta charset="UTF-8">
-		 <link href="style.css" rel="stylesheet" type="text/css" />
-	</head>
-	<header>
-		<h1>TD n°1 Programmation web - Application météo</h1>
-	</header>
-	<body>
-		<div class="villes">
-			<div class="city">
-				<h2>Niort</h2>
-				<p>12°, pluvieux</p>
-				<img src="pluvieux.png" width="5%" alt="Image de temps pluvieux">
-			</div>
-			<div class="city">
-				<h2>Rio de Janeiro</h2>
-				<p>29°, orageux</p>
-				<img src="orageux.png" width="5%" alt="Image de temps orageux">
-			</div>
-			<div class="city">
-				<h2>Reykjavik</h2>
-				<p>-10°, ensoleillé</p>
-				<img src="ensoleille.png" width="5%" alt="Image de temps ensoleillé">
-			</div>
-		</div>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="td1.js"></script>
+</head>
 
-	<footer>
-		<p>Dorine BARBEY
-		</br>
-		Icônes météo par <a href = 'https://thenounproject.com'> The Noun Project </a>
-		</p>
-	</footer>
+<body>
+<header>
+    <h1>TD n°1 Programmation web - Application météo</h1>
+</header>
+<label for="villesChoix"> Choisir une ville : </label>
+<select onchange="afficheVille()" name="villesMeteo" id="villesChoix">
+    <option value="Niort"> Niort </option>
+    <option value="Rio"> Rio de Janeiro </option>
+    <option value="Reykjavik"> Reykjavik </option>
+</select>
+<div class="villes">
+    <div class="city" id="Niort">
+        <h2>Niort</h2>
+        <p>12°, pluvieux</p>
+        <img src="pluvieux.png" width="5%" alt="Image de temps pluvieux">
+    </div>
+    <div class="city" id="Rio">
+        <h2>Rio de Janeiro</h2>
+        <p>29°, orageux</p>
+        <img src="orageux.png" width="5%" alt="Image de temps orageux">
+    </div>
+    <div class="city" id="Reykjavik">
+        <h2>Reykjavik</h2>
+        <p>-10°, ensoleillé</p>
+        <img src="ensoleille.png" width="5%" alt="Image de temps ensoleillé">
+    </div>
+</div>
+<footer>
+    <p>Dorine BARBEY
+        <br/>
+        Icônes météo par <a href='https://thenounproject.com'> The Noun Project </a>
+    </p>
+</footer>
+</body>
 </html>
