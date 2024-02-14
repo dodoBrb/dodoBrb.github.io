@@ -1,5 +1,5 @@
 header {
-  background-color: black;
+  background-color: #260C1A;
   color: white;
   text-align: center;
 }
@@ -9,7 +9,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: black;
+    background-color: #260C1A;
     color: white;
     text-align: center;
     padding: 10px;
@@ -32,7 +32,7 @@ body {
 }
 
 #weatherInfo div {
-    background-color: #f9f9f9;
+    background-color: #FF958C;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
